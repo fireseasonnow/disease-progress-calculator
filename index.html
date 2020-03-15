@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disease progress calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/css/foundation.min.css"
+      integrity="sha256-GSio8qamaXapM8Fq9JYdGNTvk/dgs+cMLgPeevOYEx0= sha384-wAweiGTn38CY2DSwAaEffed6iMeflc0FMiuptanbN4J+ib+342gKGpvYRWubPd/+ sha512-QHEb6jOC8SaGTmYmGU19u2FhIfeG+t/hSacIWPpDzOp5yygnthL3JwnilM7LM1dOAbJv62R+/FICfsrKUqv4Gg=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="grid-x grid-padding-x">
+    <header class="Ŕcell">
+      <h1 class="">Disease progress calculator</h1>
+    </header>
+    <main class="grid-x grid-margin-x grid-padding-x small-12">
+      <section class="inputs cell small-5">
+        <form>
+          <label
+            >Initial cases
+            <input
+              class="inputs__input inputs__input--initial"
+              type="number"
+              placeholder="30"
+            />
+          </label>
+          <label
+            >How many days to calculate
+            <input
+              class="inputs__input inputs__input--days"
+              type="number"
+              placeholder="30"
+            />
+          </label>
+          <label
+            >Daily percentage increase
+            <input
+              class="inputs__input inputs__input--percentage"
+              type="number"
+              placeholder="30"
+            />
+          </label>
+          <button
+            class="success button inputs__button inputs__button--submit"
+            type="button"
+          >
+            Calculate
+          </button>
+          <button
+            class="alert button inputs__button inputs__button--reset"
+            type="reset"
+          >
+            Clear
+          </button>
+        </form>
+      </section>
+      <section class="results cell small-7">
+        <table class="results__table">
+          <thead>
+            <th class="result__tableFirstColumn">Days</th>
+            <th>Cases</th>
+          </thead>
+          <tbody class="results__tableBody">
+            <tr>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="results__error results__error--hide">Fill all the fields!</p>
+      </section>
+    </main>
+    <footer class="footer cell">
+      <small
+        >© 2020 by
+        <a href="https://github.com/whitebackdoor7" target="_blank"
+          >Adam Michalowski</a
+        ></small
+      >
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

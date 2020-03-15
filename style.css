@@ -1,0 +1,17 @@
+body {
+  margin-top: 10px;
+  max-width: 650px;
+}
+
+.results__error {
+  color: red;
+}
+
+.results__error--hide,
+.results__emptyRow--hide {
+  display: none;
+}
+
+.result__tableFirstColumn {
+  width: 50px;
+}
